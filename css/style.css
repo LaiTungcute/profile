@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: orangered;
+    font-size: 20px;
+    color: #fff;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.mt5p {
+    margin-top: 5%;
+}
+
+.mb5p {
+    margin-bottom: 5%;
+}
+
+.ml5p {
+    margin-left: 5%;
+}
+
+.mr5p {
+    margin-right: 5%;
+}
+
+.container {
+    height: 100vh;
+    background: url(../img/FB_IMG_1593965085195.jpg) no-repeat;
+    background-size: 100% 100vh;
+    position: relative;
+}
+
+.container .content {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.content .img {
+    width: 20vw;
+    height: 20vw;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(247, 163, 177, 0.5);
+}
+
+.content h1 {
+    color: rgba(234, 34, 34, 0.911);
+    font-size: 36px;
+}
+
+.content h2:nth-child(3),
+.content h2:nth-child(5)
+{
+    color: rgb(85, 255, 0);
+}
+
+.content h2:nth-child(4),
+.content h2:nth-child(6)
+{
+    color: blueviolet;
+}
+
+/* responsive */
+/* @media only screen and (max-width: 500px) {
+    .background {
+    }
+} */
+
+@media only screen and (min-width: 501px) {
+    .background {
+        clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+    }
+}
